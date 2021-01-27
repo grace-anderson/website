@@ -29,23 +29,21 @@ const server = app.listen(port, listening);
     console.log(`running on localhost: ${port}`);
   };
 
-
 //GET
 //create empty javascript object
-/* const appData = {};
+const appData = {};
 //return javascript object when GET request is made
   app.get('/addMovie', (req, res)=> { 
-    res.send(projectData);
-  }); */
-
+    res.send(appData);
+  });
 
 //POST - MOVIE EXAMPLE
 //create an array to hold data
-/* const data = []; //data array
+const data = []; //data array
 //create post() (express methos) with url path and a callback function
 app.post("/addMovie", addMovie);
 //add data received from request.body
 function addMovie(req, res) {
   data.push(req.body); //addMovie will take the info from req.body, and push into data array
   console.log(data);
-}; */
+}; 
