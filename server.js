@@ -44,24 +44,10 @@ function sendData(req, res) {
 //POST - MOVIE EXAMPLE
 //create an array to hold data
 const data = []; //data array
-//create post() (express method) with url path and a callback function (addMovie)
-app.post("/addMovie", callBack);
+//create post() (express method) with url path and a callback function
 
-function callBack(req, res) {
-  res.send("POST received");
-}
-
-/* app.post('/addMovie', addMovie);
-
-//add data received from request.body
-function addMovie(req, res) {
-  data.push(req.body); //addMovie will take the info from req.body, and push into data array
-  console.log(data);
-}
- */
 app.post("/addMovie", function (request, response) {
   let data = request.body;
-  projectData.push(request.body);
+  projectData = request.body;
   console.log(data);
 });
-
