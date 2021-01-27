@@ -26,9 +26,13 @@ const port = 8000;
 
 //spin up the server
 //server variable declared and run using arrow function, for e.g.
-const server = app.listen(port ())=>{
-  console.log(`running on localhost: ${port}`)
+const server = app.listen(port, listening);
+
+function listening(){
+  console.log('server running');
+  console.log(`running on localhost: ${port}`);
 };
+
 
 //GET
 //create empty javascript object
