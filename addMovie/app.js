@@ -6,10 +6,10 @@ const postData = async (url = "", data = {}) => {
   console.log(data);
   const response = await fetch(url, {
     // this is a POST route set up with a const variable of response
-    method: 'POST',  //here is POST, could also be GET, PUT, DELETE etc
-    credentials: 'same-origin',
+    method: "POST", //here is POST, could also be GET, PUT, DELETE etc
+    credentials: "same-origin",
     headers: {
-      'Content-Type': 'application/json', //the application is running JSON data type
+      "Content-Type": "application/json", //the application is running JSON data type
     },
     // Body data type must match "Content-Type" header - i.e. JSON data type
     body: JSON.stringify(data), //JSON.stringify converts the server data (data type string) to JSON data
